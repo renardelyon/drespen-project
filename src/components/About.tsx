@@ -3,7 +3,7 @@ import Section from "./Section";
 
 export default function About() {
   return (
-    <Section id="about" className="!pt-10">
+    <Section id="about" className="!pt-10 !pb-1">
       <div className="container relative z-2">
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
           <div className="bg-black text-white p-8">

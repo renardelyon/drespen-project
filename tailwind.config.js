@@ -24,7 +24,8 @@ export default {
           9: "#FF5146",
           10: "#FF8B83",
           11: "#FFE054",
-          12: "#FFEFA6"
+          12: "#FFEFA6",
+          13: "#1D1845"
         },
         stroke: {
           1: "#26242C",
@@ -83,6 +84,7 @@ export default {
         "radial-gradient": "radial-gradient(var(--tw-gradient-stops))",
         "conference": "url('/src/assets/Frame 17036.png')",
         "grid-conf": "url('src/assets/Group 15605.png')",
+        "card-img-1": "url('src/assets/image 681.png')",
 
         "conic-gradient":
           "conic-gradient(from 225deg, #FFC876, #79FFF7, #9F53FF, #FF98E2, #FFC876)",

@@ -18,7 +18,7 @@ export default function Header() {
       {/* Countdown Timer and Discount Section */}
       <div
         className={`flex items-center justify-center
-          bg-gradient-to-r from-color-7 from-29% via-color-8 via-79% to-color-7
+          bg-gradient-to-r from-color-7 from-[10%] via-color-8 via-[29%] to-color-7
         text-white px-4 py-2 rounded-bl-3xl rounded-br-3xl space-x-4`}
       >
         <span className="hidden items-center space-x-1 md:flex">
