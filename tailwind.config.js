@@ -82,6 +82,8 @@ export default {
       backgroundImage: {
         "radial-gradient": "radial-gradient(var(--tw-gradient-stops))",
         "conference": "url('/src/assets/Frame 17036.png')",
+        "grid-conf": "url('src/assets/Group 15605.png')",
+
         "conic-gradient":
           "conic-gradient(from 225deg, #FFC876, #79FFF7, #9F53FF, #FF98E2, #FFC876)",
       },

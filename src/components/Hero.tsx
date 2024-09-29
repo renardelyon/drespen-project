@@ -6,7 +6,8 @@ import ButtonComponent from "./ButtonComponent";
 const Hero = () => {
   return (
     <Section
-      className="pt-[12rem] mt-[1.25rem] lg:mt-[5.25rem] bg-conference bg-cover"
+      customPaddings="pt-36 pb-1"
+      className="pt-[12rem] mt-[1.25rem] lg:mt-[5.25rem] bg-conference bg-cover "
       id="hero"
     >
       <div className="container relative">
@@ -39,7 +40,7 @@ const Hero = () => {
           </ButtonComponent>
           <Rating />
         </div>
-        <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
+        <div className="relative max-w-[24rem] mx-auto md:max-w-[100rem] xl:mb-24">
           <div className="relative z-1 p-0.5 rounded-2xl bg-white shadow-[0_0_15px_15px_rgba(255,255,255,0.2)]">
             <div className="relative bg-n-8 rounded-[1rem]" />
             <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
