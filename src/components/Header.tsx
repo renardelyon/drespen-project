@@ -5,8 +5,8 @@ import { GoAlertFill } from "react-icons/go";
 
 export default function Header() {
   return (
-    <div className="fixed top-0 left-0 w-full z-50 bg-black">
-      <div className="flex items-center justify-between py-2 px-5 lg:px-7 lg:py-4 xl:px-10 xl:py-4 max-lg:py-6">
+    <div className="fixed top-0 left-0 w-full z-50 bg-transparent">
+      <div className="flex bg-black items-center justify-between py-2 px-5 lg:px-7 lg:py-4 xl:px-10 xl:py-4 max-lg:py-6">
         <a className="block w-[12rem] xl:mr-8" href="hero">
           <img src={reactSvg} alt="drespen-logo" />
         </a>
