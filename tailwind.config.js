@@ -95,6 +95,7 @@ export default {
         "radial-gradient": "radial-gradient(var(--tw-gradient-stops))",
         "conference": "url('/src/assets/Frame 17036.png')",
         "grid-conf": "url('src/assets/Group 15605.png')",
+        "transformation-img": "url('src/assets/transformation-img-1.png')",
         "card-img-1": "url('src/assets/image 681.png')",
         "break-card-img-1": "url('src/assets/AUGUST 25 3.png')",
 
