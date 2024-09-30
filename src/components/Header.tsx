@@ -6,7 +6,7 @@ import { GoAlertFill } from "react-icons/go";
 export default function Header() {
   return (
     <div className="fixed top-0 left-0 w-full z-50 bg-transparent">
-      <div className="flex bg-black items-center justify-between py-2 px-5 lg:px-7 lg:py-4 xl:px-10 xl:py-4 max-lg:py-6">
+      <div className="flex bg-black items-center justify-between py-2 px-5 lg:px-10 lg:py-4 xl:px-14 xl:py-6 max-lg:py-6">
         <a className="block w-[12rem] xl:mr-8" href="hero">
           <img src={reactSvg} alt="drespen-logo" />
         </a>
@@ -19,7 +19,7 @@ export default function Header() {
       <div
         className={`hidden lg:flex items-center justify-center
           bg-gradient-to-r from-color-7 from-[10%] via-color-8 via-[29%] to-color-7
-        text-white px-4 py-2 rounded-bl-3xl rounded-br-3xl space-x-4`}
+        text-white px-4 py-4 rounded-bl-3xl rounded-br-3xl space-x-4`}
       >
         <span className="hidden items-center space-x-1 md:flex">
           <i className="fas fa-exclamation-triangle"></i>
@@ -59,7 +59,7 @@ export default function Header() {
             GET MY TICKET NOW <br /> 70% OFF
           </p>
           <p className="block sm:hidden font-montserrat text-white font-bold text-sm">
-            GET MY TICKET
+            GET TICKET
           </p>
         </ButtonComponent>
       </div>

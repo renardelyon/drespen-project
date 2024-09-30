@@ -1,11 +1,13 @@
-const TestimonialCard = ({ className }: TTestimonialCard) => {
+import React from "react";
+
+const TestimonialCard = ({ className, testimony, owner }: TTestimonialCard) => {
   return (
     <div
       className={`${className} bg-[#0E0E0E] border border-gray-700 text-white rounded-lg p-6 max-w-3xl shadow-lg`}
     >
-      <div className="flex items-start border-l-8 border-yellow-300 max-h-[200px] font-montserrat pl-4">
+      <div className="flex items-start border-l-8 border-yellow-300 max-h-[400px] font-montserrat pl-4">
         {/* Left Column - Image and Vertical Line */}
-        <div className="flex items-center w-full h-full">
+        <div className="hidden sm:flex items-center w-full h-full">
           {/* Profile Image */}
           <img
             src="src/assets/Frame 17036.png"
@@ -20,14 +22,9 @@ const TestimonialCard = ({ className }: TTestimonialCard) => {
             <span className="text-yellow-300 text-5xl -mb-5 ">“</span>
           </div>
           {/* Testimonial Text */}
-          <p className="text-gray-300 text-sm mb-2">
-            I’m a horrible gambler and my gambling was getting out of control...
-            Since I finished the event, I haven’t been back to a poker machine
-            in 11 and a half weeks. I will continue to invest in myself with Dr
-            Espen.
-          </p>
+          <p className="text-gray-300 text-sm mb-2">{testimony}</p>
           {/* Name */}
-          <p className="text-white text-sm font-semibold">John</p>
+          <p className="text-white text-sm font-semibold">{owner}</p>
         </div>
       </div>
     </div>
@@ -36,6 +33,8 @@ const TestimonialCard = ({ className }: TTestimonialCard) => {
 
 type TTestimonialCard = {
   className?: string;
+  testimony: React.ReactNode;
+  owner: React.ReactNode;
 };
 
 export default TestimonialCard;

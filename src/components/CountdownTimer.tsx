@@ -7,7 +7,7 @@ export default function CountdownTimer({ className }: TCountdownTimer) {
 
   return (
     <div
-      className={` ${className} hidden font-open-sans items-center space-x-2 text-lg font-bold md:flex`}
+      className={` ${className} flex font-open-sans items-center space-x-2 text-lg font-bold`}
     >
       <span className="text-2xl">{hours}</span>
       <span className="text-sm font-semibold">Hrs</span>

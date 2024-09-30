@@ -9,14 +9,14 @@ export default function About() {
           <div className="bg-black text-white p-8">
             {/* Header */}
             <div className="text-left mx-auto">
-              <h1 className="h2 font-bold font-montserrat">
-                ARE YOU FEELING STUCK IN A LIFE THAT'S LESS THAN YOU DESERVE?
+              <h1 className="h2 font-bold font-montserrat uppercase">
+                Are You Feeling Stuck in a Life That’s Less Than You Deserve?
               </h1>
             </div>
             {/* Checkmark List */}
             <div className="my-8 text-xl md:text-2xl space-y-4">
-              <p className="font-bold text-left font-montserrat">
-                DO YOU WAKE UP EACH DAY FEELING:
+              <p className="font-bold text-left font-montserrat uppercase">
+                Do you wake up each day feeling:
               </p>
               <ul className="space-y-2 list-none text-lg md:text-xl text-left font-open-sans">
                 {[
