@@ -17,7 +17,7 @@ export default function Header() {
       </div>
       {/* Countdown Timer and Discount Section */}
       <div
-        className={`flex items-center justify-center
+        className={`hidden lg:flex items-center justify-center
           bg-gradient-to-r from-color-7 from-[10%] via-color-8 via-[29%] to-color-7
         text-white px-4 py-2 rounded-bl-3xl rounded-br-3xl space-x-4`}
       >
@@ -33,6 +33,33 @@ export default function Header() {
         <ButtonComponent>
           <p className="font-montserrat text-white font-bold text-medium">
             GET MY TICKET NOW - 70% OFF
+          </p>
+        </ButtonComponent>
+      </div>
+      <div
+        className={`flex lg:hidden items-center justify-center
+          bg-gradient-to-r bg-gradient-r from-color-7 from-[-80%] via-color-8 via-[80%] to-color-7 to-[110%]
+        text-white px-4 py-4 space-x-4 fixed w-full bottom-0 left-0`}
+      >
+        <div className="flex flex-col">
+          <span className="items-center space-x-1 flex ">
+            <i className="fas fa-exclamation-triangle"></i>
+            <span className="text-sm flex items-center">
+              <GoAlertFill className="mr-2" />
+              <p className="font-open-sans font-bold text-md">
+                70% DISCOUNT EXPIRES IN:
+              </p>
+            </span>
+          </span>
+          <CountdownTimer className="pr-4 !text-sm pt-2" />
+        </div>
+        {/* Ticket Button Inside Countdown */}
+        <ButtonComponent>
+          <p className="hidden sm:block font-montserrat text-white font-bold text-sm">
+            GET MY TICKET NOW <br /> 70% OFF
+          </p>
+          <p className="block sm:hidden font-montserrat text-white font-bold text-sm">
+            GET MY TICKET
           </p>
         </ButtonComponent>
       </div>
