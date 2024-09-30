@@ -18,7 +18,7 @@ const Testimonials = () => {
     <Section
       customPaddings="pt-36 pb-1 bg-gradient-to-t from-color-14 to-color-15"
       className="pt-[12rem] "
-      id="hero"
+      id="testimonials"
     >
       <div className="container relative">
         <div className="text-black">

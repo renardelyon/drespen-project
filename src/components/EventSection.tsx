@@ -95,7 +95,7 @@ const EventSection = () => {
               <div
                 className={`${
                   isOpposite && "lg:order-1"
-                } flex justify-self-end`}
+                } flex  justify-self-center lg:justify-self-end`}
               >
                 <img
                   src={image}
@@ -114,7 +114,7 @@ const EventSection = () => {
           </h1>
         </div>
         <ImageCarouselCard />
-        <div className="text-center mx-32 md:mx-52 mt-12 font-open-sans">
+        <div className="max-w-xl md:max-w-3xl text-center mx-auto mt-12 font-open-sans px-10">
           <p className="text-4xl mb-4 font-bold font-montserrat uppercase">
             Feel the power yourself
           </p>
