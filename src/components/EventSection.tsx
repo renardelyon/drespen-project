@@ -114,18 +114,20 @@ const EventSection = () => {
           </h1>
         </div>
         <ImageCarouselCard />
-        <div className="max-w-xl md:max-w-3xl text-center mx-auto mt-12 font-open-sans px-10">
+        <div className="max-w-sm md:max-w-3xl text-center mx-auto mt-12 font-open-sans">
           <p className="text-4xl mb-4 font-bold font-montserrat uppercase">
             Feel the power yourself
           </p>
-          <p className="text-xl mb-4 max-w-xl mx-auto">
-            Experience transformation at the speed of thought and leap into your
-            full potential.
+          <p className="text-xl max-w-xl mx-auto">
+            Take control of your story and step into your full potential
           </p>
-          <ButtonComponent className="mt-12 px-3 py-4 sm:px-20 sm:py-10">
-            <p className="font-montserrat text-sm text-white font-bold sm:text-xl uppercase">
+          <ButtonComponent className="max-auto mt-8 px-3 py-4 sm:px-20 sm:py-10">
+            <p className="hidden md:block font-montserrat text-sm text-white font-bold sm:text-xl uppercase">
               Yes, I’m Ready to Quantum <br />
               Leap My Life – Reserve My Spot!
+            </p>
+            <p className="md:hidden block font-montserrat text-sm text-white font-bold sm:text-xl uppercase">
+              Yes, I’m Ready
             </p>
           </ButtonComponent>
           <p className="text-sm mt-4 italic">

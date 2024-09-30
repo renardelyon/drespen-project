@@ -16,7 +16,7 @@ const Testimonials = () => {
 
   return (
     <Section
-      customPaddings="pt-36 pb-1 bg-gradient-to-t from-color-14 to-color-15"
+      customPaddings="pb-12 pt-36 pb-1 bg-gradient-to-t from-color-14 to-color-15"
       className="pt-[12rem] "
       id="testimonials"
     >
@@ -65,17 +65,20 @@ const Testimonials = () => {
           </div>
 
           {/* Call to Action */}
-          <div className="text-center mx-32 md:mx-52 mt-12 font-open-sans">
+          <div className="max-w-sm md:max-w-3xl text-center mx-auto mt-12 font-open-sans">
             <p className="text-4xl mb-4 font-bold font-montserrat uppercase">
-              Feel the power yourself
+              Ready to make this your breakthrough moment too?
             </p>
             <p className="text-xl max-w-xl mx-auto">
               Take control of your story and step into your full potential
             </p>
-            <ButtonComponent className="mt-8 px-3 py-4 sm:px-20 sm:py-10">
-              <p className="font-montserrat text-sm text-white font-bold sm:text-xl uppercase">
+            <ButtonComponent className="max-auto mt-8 px-3 py-4 sm:px-20 sm:py-10">
+              <p className="hidden md:block font-montserrat text-sm text-white font-bold sm:text-xl uppercase">
                 Yes, I’m Ready to Quantum <br />
                 Leap My Life – Reserve My Spot!
+              </p>
+              <p className="md:hidden block font-montserrat text-sm text-white font-bold sm:text-xl uppercase">
+                Yes, I’m Ready
               </p>
             </ButtonComponent>
             <p className="text-sm mt-4 italic">

@@ -37,7 +37,7 @@ export default function Header() {
         </ButtonComponent>
       </div>
       <div
-        className={`flex lg:hidden items-center justify-center
+        className={`flex lg:hidden items-center justify-center rounded-t-lg
           bg-gradient-to-r bg-gradient-r from-color-7 from-[-80%] via-color-8 via-[80%] to-color-7 to-[110%]
         text-white px-4 py-4 space-x-4 fixed w-full bottom-0 left-0`}
       >
