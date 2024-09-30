@@ -1,0 +1,75 @@
+import { useState } from "react";
+import Section from "./Section";
+
+const AdmissionSection = () => {
+  const images = [
+    "src/assets/event-img-1.png",
+    "src/assets/event-img-2.png",
+    "src/assets/event-img-1.png",
+  ];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const handleImageChange = (index: number) => {
+    setCurrentImageIndex(index);
+  };
+
+  return (
+    <Section id="visionary" customPaddings=" pt-0">
+      {" "}
+      <div className="relative w-full h-screen">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `url(${images[currentImageIndex]})`,
+          }}
+        >
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-black/50"></div>
+        </div>
+
+        {/* Content Section */}
+        <div className="text-left relative z-10 text-white p-8 max-w-4xl ml-[6rem] mr-auto pt-14">
+          <h1 className="text-4xl font-bold mb-6">
+            YOUR QUANTUM BREAKTHROUGH AWAITS AT DEE WHY RSL
+          </h1>
+          <p className="text-lg mb-4">
+            Dee Why RSL, 932 Pittwater Rd, Dee Why, NSW, Australia | October
+            8th, 2024
+          </p>
+          <p className="text-yellow-400 text-lg mb-4">
+            VIP: 8:30 AM - 9:30 AM | General Admission: 9:30 AM - 8:00 PM
+          </p>
+          <p className="text-lg mb-4">
+            Nestled in the heart of Sydney's northern beaches, Dee Why RSL
+            seamlessly blends modern luxury with transformative energy, ensuring
+            that every moment at the Quantum Summit elevates your consciousness
+            and unlocks your highest potential.
+          </p>
+          <p className="text-lg">
+            From state-of-the-art facilities that amplify our groundbreaking DMT
+            Breathwork sessions to serene natural spaces ideal for deep
+            reflection and connection, Dee Why RSL is more than just a
+            venue—it’s a portal to your extraordinary future.
+          </p>
+        </div>
+
+        {/* Rectangles for Image Selection */}
+        <div className="relative z-20 flex justify-center space-x-4 mt-8">
+          {images.map((_, index) => (
+            <div
+              key={index}
+              onClick={() => handleImageChange(index)}
+              className={`cursor-pointer w-12 h-2 rounded-full transition-colors duration-300 ${
+                currentImageIndex === index ? "bg-white" : "bg-gray-500"
+              }`}
+            ></div>
+          ))}
+        </div>
+      </div>
+    </Section>
+  );
+};
+
+export default AdmissionSection;
