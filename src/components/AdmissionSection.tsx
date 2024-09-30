@@ -1,11 +1,13 @@
 import { useState } from "react";
 import Section from "./Section";
+import "../style/admission.css";
 
 const AdmissionSection = () => {
   const images = [
-    "src/assets/event-img-1.png",
-    "src/assets/event-img-2.png",
-    "src/assets/event-img-1.png",
+    "src/assets/admission-img-1.png",
+    "src/assets/admission-img-2.png",
+    "src/assets/admission-img-1.png",
+    "src/assets/admission-img-2.png",
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -15,7 +17,7 @@ const AdmissionSection = () => {
   };
 
   return (
-    <Section id="visionary" customPaddings=" pt-0">
+    <Section id="admission" customPaddings="pt-0">
       {" "}
       <div className="relative w-full h-screen">
         {/* Background Image */}
@@ -26,19 +28,19 @@ const AdmissionSection = () => {
           }}
         >
           {/* Overlay */}
-          <div className="absolute inset-0 bg-black/50"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black from-[30%] to-transparent"></div>
         </div>
 
         {/* Content Section */}
-        <div className="text-left relative z-10 text-white p-8 max-w-4xl ml-[6rem] mr-auto pt-14">
-          <h1 className="text-4xl font-bold mb-6">
+        <div className=" admission-section-sm admission-section-lg">
+          <h1 className="text-4xl font-bold mb-6 font-montserrat">
             YOUR QUANTUM BREAKTHROUGH AWAITS AT DEE WHY RSL
           </h1>
-          <p className="text-lg mb-4">
+          <p className="text-lg mb-4"></p>
+          <p className="text-yellow-400 text-lg mb-4">
             Dee Why RSL, 932 Pittwater Rd, Dee Why, NSW, Australia | October
             8th, 2024
-          </p>
-          <p className="text-yellow-400 text-lg mb-4">
+            <br />
             VIP: 8:30 AM - 9:30 AM | General Admission: 9:30 AM - 8:00 PM
           </p>
           <p className="text-lg mb-4">
@@ -56,12 +58,12 @@ const AdmissionSection = () => {
         </div>
 
         {/* Rectangles for Image Selection */}
-        <div className="relative z-20 flex justify-center space-x-4 mt-8">
+        <div className="absolute  inset-x-0 bottom-24 z-20 flex justify-center space-x-4 mt-8">
           {images.map((_, index) => (
             <div
               key={index}
               onClick={() => handleImageChange(index)}
-              className={`cursor-pointer w-12 h-2 rounded-full transition-colors duration-300 ${
+              className={`cursor-pointer w-72 h-3 rounded-none transition-colors duration-300 ${
                 currentImageIndex === index ? "bg-white" : "bg-gray-500"
               }`}
             ></div>

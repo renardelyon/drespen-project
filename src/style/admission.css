@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.admission-section-sm {
+    @apply pb-40 text-center relative z-10 text-white p-8 max-w-4xl mx-auto pt-14 font-open-sans;
+}
+
+@media (min-width: 1024px) {
+    .admission-section-lg {
+        @apply pb-40 text-left relative z-10 text-white p-8 max-w-4xl ml-[6rem] mr-auto pt-14 font-open-sans;
+    }
+}
+
+  

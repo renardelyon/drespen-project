@@ -93,7 +93,7 @@ const TransformationSection = () => {
           </div>
         </div>
       </div>
-      <div className="bg-transformation-img w-screen h-[32rem] bg-cover bg-no-repeat mb-20" />
+      <div className="bg-transformation-img w-full h-[32rem] bg-cover bg-no-repeat mb-20" />
     </Section>
   );
 };
