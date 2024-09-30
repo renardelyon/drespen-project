@@ -1,3 +1,4 @@
+/* eslint-disable no-irregular-whitespace */
 import React from "react";
 import Section from "./Section";
 
@@ -34,23 +35,79 @@ const IntroSection = () => {
               <h2 className="text-4xl font-bold mb-6 font-montserrat pt-8">
                 HERE'S HOW IT WORKS:
               </h2>
-              <h3 className="text-3xl font-bold font-montserrat pt-10">
-                REWIRE YOUR NEURAL PATHWAYS
-              </h3>
-              <p className=" text-lg text-white font-open-sans pb-2 max-w-[44rem]">
-                By tapping into the brain’s neuroplasticity and re-writing the
-                pathway from the low vibration of Fear, to the higher vibration
-                of Love, Quantum Leaping supports the conditions for dissolving
-                old limiting beliefs and restructuring thought patterns. This
-                shift fosters adaptability and creative thinking, enhancing both
-                your leadership skills and your ability to innovate in business
-                and life (<i>MDPI</i>)(Well Being Journal).
-              </p>
-              <img
-                src="src/assets/IMG_7900 1.png"
-                alt="Rewire Neural Pathways"
-                className="rounded-lg shadow-lg w-full max-[64rem]"
-              />
+              {[
+                {
+                  title: "REWIRE YOUR NEURAL PATHWAYS",
+                  content: (
+                    <>
+                      {" "}
+                      By tapping into the brain’s neuroplasticity and re-writing
+                      the pathway from the low vibration of Fear, to the higher
+                      vibration of Love, Quantum Leaping supports the conditions
+                      for dissolving old limiting beliefs and restructuring
+                      thought patterns. This shift fosters adaptability and
+                      creative thinking, enhancing both your leadership skills
+                      and your ability to innovate in business and life (
+                      <i>MDPI</i>
+                      )(Well Being Journal).
+                    </>
+                  ),
+                  src: "src/assets/IMG_7900 1.png",
+                },
+                {
+                  title: "Activate Cellular Vitality",
+                  content: (
+                    <>
+                      Quantum Leaping works with scientifically proven
+                      epigenetic principles, helping optimise the way your cells
+                      respond to stress and your environment. This improves how
+                      your genes express themselves, boosting your body’s
+                      resilience, stress management, and overall physical health
+                      <i> ​(JNeurosci) ​(BioMed Central)</i>.
+                    </>
+                  ),
+                  src: "src/assets/IMG_7900 1.png",
+                },
+                {
+                  title: "Access Heightened States of Consciousness",
+                  content: (
+                    <>
+                      Through scientifically-backed breathwork techniques,
+                      Quantum Leaping helps you access altered brainwave states.
+                      This expands your creativity, sharpens neural
+                      connectivity, and deepens self-awareness, unlocking new
+                      personal and professional insights​​ <i>(JNeurosci).</i>
+                    </>
+                  ),
+                  src: "src/assets/IMG_7900 1.png",
+                },
+                {
+                  title: "Manifest Your Desires with Quantum Precision",
+                  content: (
+                    <>
+                      Quantum Leaping aligns your energy with your goals, like
+                      tuning a radio to the perfect frequency. This heightens
+                      your awareness and focus, allowing you to spot and seize
+                      opportunities with unprecedented clarity and speed.
+                    </>
+                  ),
+                  src: "src/assets/IMG_7900 1.png",
+                },
+              ].map(({ title, content, src }) => (
+                <>
+                  <h3 className="text-3xl font-bold font-montserrat pt-10 uppercase">
+                    {title}
+                  </h3>
+                  <p className=" text-lg text-white font-open-sans pb-2 max-w-[44rem]">
+                    {content}
+                  </p>
+                  <img
+                    src={src}
+                    alt="Rewire Neural Pathways"
+                    className="rounded-lg shadow-lg w-full max-[64rem]"
+                  />
+                </>
+              ))}
             </div>
           </div>
         </div>

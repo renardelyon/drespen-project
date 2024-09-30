@@ -75,11 +75,11 @@ export default function About() {
                 potential.
               </p>
             </div>
-            {/* Image Grid */}
           </div>
         </div>
       </div>
-      <div className="bg-grid-conf w-screen h-[52rem] bg-cover" />
+      {/* Image Grid */}
+      <div className="bg-grid-conf w-screen h-[52rem] bg-cover md:bg-contain bg-no-repeat" />
       <div className="container relative z-2">
         <div className="bg-black text-white p-8">
           <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
