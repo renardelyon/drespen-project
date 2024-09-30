@@ -5,7 +5,7 @@ import TestimonialCard from "./TestimonialCard";
 const Breakthrough = () => {
   return (
     <Section
-      id="benefit"
+      id="breakthrough"
       className="!pt-1 !pb-1 bg-gradient-to-b from-color-13 from-[33%] to-black"
     >
       <div className="container relative">

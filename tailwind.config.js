@@ -11,6 +11,15 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      }, 
+      animation: {
+        marquee: 'marquee 20s linear infinite',
+      },
       colors: {
         color: {
           1: "#AC6AFF",
@@ -25,7 +34,9 @@ export default {
           10: "#FF8B83",
           11: "#FFE054",
           12: "#FFEFA6",
-          13: "#1D1845"
+          13: "#1D1845",
+          14: "#FFFCF0",
+          15: "#FFF5C9"
         },
         stroke: {
           1: "#26242C",
