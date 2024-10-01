@@ -51,7 +51,7 @@ const IntroSection = () => {
                       )(Well Being Journal).
                     </>
                   ),
-                  src: "src/assets/IMG_7900 1.png",
+                  src: "/src/assets/IMG_7900 1.png",
                 },
                 {
                   title: "Activate Cellular Vitality",
@@ -65,7 +65,7 @@ const IntroSection = () => {
                       <i> ​(JNeurosci) ​(BioMed Central)</i>.
                     </>
                   ),
-                  src: "src/assets/IMG_7900 1.png",
+                  src: "/src/assets/IMG_7900 1.png",
                 },
                 {
                   title: "Access Heightened States of Consciousness",
@@ -78,7 +78,7 @@ const IntroSection = () => {
                       personal and professional insights​​ <i>(JNeurosci).</i>
                     </>
                   ),
-                  src: "src/assets/IMG_7900 1.png",
+                  src: "/src/assets/IMG_7900 1.png",
                 },
                 {
                   title: "Manifest Your Desires with Quantum Precision",
@@ -90,7 +90,7 @@ const IntroSection = () => {
                       opportunities with unprecedented clarity and speed.
                     </>
                   ),
-                  src: "src/assets/IMG_7900 1.png",
+                  src: "/src/assets/IMG_7900 1.png",
                 },
               ].map(({ title, content, src }) => (
                 <>

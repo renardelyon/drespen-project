@@ -3,9 +3,9 @@ import { useState } from "react";
 const ImageCarouselCard = () => {
   // Array of images
   const images = [
-    "src/assets/potrait-carousel-1.png",
-    "src/assets/potrait-carousel-1.png",
-    "src/assets/potrait-carousel-1.png",
+    "/src/assets/potrait-carousel-1.png",
+    "/src/assets/potrait-carousel-1.png",
+    "/src/assets/potrait-carousel-1.png",
   ];
 
   const carouselData = [

@@ -49,8 +49,8 @@ const VisionarySection = () => {
                   "Advisor to Fortune 500 CEOs on Peak Performance and Conscious Leadership",
                   "Creator of the Quantum DMT Breathwork Experience",
                 ],
-                speakerImg: "src/assets/visionary-img-1.png",
-                quotedPersonImg: "src/assets/visionary-img-1.png",
+                speakerImg: "/src/assets/visionary-img-1.png",
+                quotedPersonImg: "/src/assets/visionary-img-1.png",
                 quoteSection: (
                   <div className="flex-grow font-open-sans text-sm">
                     <p className="italic">
@@ -86,8 +86,8 @@ const VisionarySection = () => {
                   "Advisor to Fortune 500 CEOs on Peak Performance and Conscious Leadership",
                   "Creator of the Quantum DMT Breathwork Experience",
                 ],
-                speakerImg: "src/assets/visionary-img-1.png",
-                quotedPersonImg: "src/assets/visionary-img-1.png",
+                speakerImg: "/src/assets/visionary-img-1.png",
+                quotedPersonImg: "/src/assets/visionary-img-1.png",
                 quoteSection: (
                   <div className="flex-grow font-open-sans text-sm">
                     <p className="italic">
@@ -123,8 +123,8 @@ const VisionarySection = () => {
                   "Advisor to Fortune 500 CEOs on Peak Performance and Conscious Leadership",
                   "Creator of the Quantum DMT Breathwork Experience",
                 ],
-                speakerImg: "src/assets/visionary-img-1.png",
-                quotedPersonImg: "src/assets/visionary-img-1.png",
+                speakerImg: "/src/assets/visionary-img-1.png",
+                quotedPersonImg: "/src/assets/visionary-img-1.png",
                 quoteSection: (
                   <div className="flex-grow font-open-sans text-sm">
                     <p className="italic">
@@ -160,8 +160,8 @@ const VisionarySection = () => {
                   "Advisor to Fortune 500 CEOs on Peak Performance and Conscious Leadership",
                   "Creator of the Quantum DMT Breathwork Experience",
                 ],
-                speakerImg: "src/assets/visionary-img-1.png",
-                quotedPersonImg: "src/assets/visionary-img-1.png",
+                speakerImg: "/src/assets/visionary-img-1.png",
+                quotedPersonImg: "/src/assets/visionary-img-1.png",
                 quoteSection: (
                   <div className="flex-grow font-open-sans text-sm">
                     <p className="italic">

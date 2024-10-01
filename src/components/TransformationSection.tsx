@@ -45,17 +45,17 @@ const TransformationSection = () => {
           <div className="flex items-center justify-center mb-16">
             <div className="bg-white p-4 rounded-md inline-block">
               <img
-                src="src/assets/Q ACADEMY - Black 1.png"
+                src="/src/assets/Q ACADEMY - Black 1.png"
                 alt="Quantum Academy"
                 className="inline-block w-48 mr-4"
               />
               <img
-                src="src/assets/OFFICIAL RESEARCH PARTNERS.png"
+                src="/src/assets/OFFICIAL RESEARCH PARTNERS.png"
                 alt="Partner 1"
                 className="inline-block w-36 mr-4"
               />
               <img
-                src="src/assets/James-cook-u.png"
+                src="/src/assets/James-cook-u.png"
                 alt="Partner 2"
                 className="inline-block w-36"
               />
