@@ -69,7 +69,7 @@ const ImageCarouselCard = () => {
           <img
             src={images[currentImageIndex]}
             alt="Expert Image"
-            className="lg:rounded-l-lg rounded-t-lg  shadow-lg max-w-6xl w-full"
+            className="rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none  shadow-lg max-w-6xl w-full"
           />
 
           {/* Rectangles below the image */}
@@ -89,7 +89,7 @@ const ImageCarouselCard = () => {
         {/* Text Section */}
         <div
           className={`${carouselData[currentImageIndex].bgColor} text-white p-6 
-          rounded-b-lg lg:rounded-r-lg relative h-full font-montserrat`}
+          rounded-b-lg lg:rounded-r-lg lg:rounded-bl-none relative h-full font-montserrat`}
         >
           <div className="text-yellow-400 text-[82px] max-h-[68px] h-full">
             “

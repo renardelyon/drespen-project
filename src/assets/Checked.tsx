@@ -1,8 +1,8 @@
-export default function Checked() {
+export default function CheckedRed({ width, height }: TChecked) {
   return (
     <svg
-      width="28"
-      height="27"
+      width={`${width || "28"}`}
+      height={`${height || "27"}`}
       viewBox="0 0 28 27"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -34,3 +34,8 @@ export default function Checked() {
     </svg>
   );
 }
+
+type TChecked = {
+  width?: number;
+  height?: number;
+};

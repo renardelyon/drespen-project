@@ -7,7 +7,7 @@ const ScheduleSection = () => {
         <div className="pt-12 pb-0 text-black">
           {/* Heading Section */}
           <div className="text-center mb-12 px-4">
-            <h1 className="text:4xl md:text-5xl font-bold mb-4 font-montserrat">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 font-montserrat">
               HERE'S WHAT YOU CAN EXPECT
             </h1>
             <p className="text-lg max-w-2xl mx-auto font-open-sans">
