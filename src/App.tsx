@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import About from "./components/About";
 import AdmissionSection from "./components/AdmissionSection";
 import Benefit from "./components/Benefit";
@@ -35,6 +37,8 @@ function App() {
         <FAQSection />
         {/* <SocialMediaSection /> */}
         <Footer />
+        <Analytics />
+        <SpeedInsights />
       </div>
     </>
   );
