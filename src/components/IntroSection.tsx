@@ -1,5 +1,4 @@
 /* eslint-disable no-irregular-whitespace */
-import React from "react";
 import Section from "./Section";
 
 const IntroSection = () => {

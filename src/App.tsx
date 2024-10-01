@@ -10,7 +10,7 @@ import Hero from "./components/Hero";
 import IntroSection from "./components/IntroSection";
 import PriceSection from "./components/PriceSection";
 import ScheduleSection from "./components/ScheduleSection";
-import SocialMediaSection from "./components/SocialMediaSection";
+// import SocialMediaSection from "./components/SocialMediaSection";
 import Testimonials from "./components/TestimonialsSection";
 import TransformationSection from "./components/TransformationSection";
 import VisionarySection from "./components/VisionarySection";

@@ -32,7 +32,7 @@ export default function Logo() {
   );
 }
 
-type TLogo = {
-  width?: number;
-  height?: number;
-};
+// type TLogo = {
+//   width?: number;
+//   height?: number;
+// };
