@@ -10,7 +10,7 @@ const TestimonialCard = ({ className, testimony, owner }: TTestimonialCard) => {
         <div className="hidden sm:flex items-center w-full h-full">
           {/* Profile Image */}
           <img
-            src="/src/assets/Frame 17036.png"
+            src="/Frame 17036.png"
             alt="John"
             className="w-full h-full rounded-lg object-cover"
           />

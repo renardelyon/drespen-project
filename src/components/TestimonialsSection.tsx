@@ -3,7 +3,7 @@ import Section from "./Section";
 
 const Testimonials = () => {
   const testimonial = {
-    video: "/src/assets/video-img-1.png",
+    video: "/video-img-1.png",
     quote: (
       <>
         The energy and the vibe and the space that Espen and his team creates is

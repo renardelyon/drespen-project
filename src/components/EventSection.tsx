@@ -19,7 +19,7 @@ const EventSection = () => {
         {/* Large Main Image */}
         <div className="flex justify-center mb-16 px-4">
           <img
-            src="//src/assets/event-img-1.png"
+            src="//event-img-1.png"
             alt="Quantum Leaping Event"
             className="rounded-lg shadow-lg max-w-6xl w-full"
           />
@@ -42,7 +42,7 @@ const EventSection = () => {
                   your life on the day!
                 </>
               ),
-              image: "/src/assets/event-img-2.png",
+              image: "/event-img-2.png",
               isOpposite: false,
             },
             {
@@ -57,7 +57,7 @@ const EventSection = () => {
                   where you can be celebrated exactly who you are.
                 </>
               ),
-              image: "/src/assets/event-img-2.png",
+              image: "/event-img-2.png",
               isOpposite: true,
             },
             {
@@ -72,7 +72,7 @@ const EventSection = () => {
                   life.
                 </>
               ),
-              image: "/src/assets/event-img-2.png",
+              image: "/event-img-2.png",
               isOpposite: false,
             },
           ].map(({ header, content, image, isOpposite }) => (

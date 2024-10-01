@@ -4,10 +4,10 @@ import "../style/admission.css";
 
 const AdmissionSection = () => {
   const images = [
-    "/src/assets/admission-img-1.png",
-    "/src/assets/admission-img-2.png",
-    "/src/assets/admission-img-1.png",
-    "/src/assets/admission-img-2.png",
+    "/admission-img-1.png",
+    "/admission-img-2.png",
+    "/admission-img-1.png",
+    "/admission-img-2.png",
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
