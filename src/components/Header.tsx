@@ -1,4 +1,4 @@
-import reactSvg from "../assets/react.svg";
+import Logo from "../assets/Logo";
 import CountdownTimer from "./CountdownTimer";
 import ButtonComponent from "./ButtonComponent";
 import { GoAlertFill } from "react-icons/go";
@@ -8,7 +8,7 @@ export default function Header() {
     <div className="fixed top-0 left-0 w-full z-50 bg-transparent">
       <div className="flex bg-black items-center justify-between py-2 px-5 lg:px-10 lg:py-4 xl:px-14 xl:py-6 max-lg:py-6">
         <a className="block w-[12rem] xl:mr-8" href="hero">
-          <img src={reactSvg} alt="drespen-logo" />
+          <Logo />
         </a>
 
         <ButtonComponent>

@@ -51,7 +51,7 @@ const FAQSection = () => {
   return (
     <Section
       id="faq"
-      className="bg-gradient-to-b from-[#FFFCF0] to-[#FFF5C9] !pt-12"
+      className="bg-gradient-to-b from-[#FFFCF0] to-[#FFF5C9] !pt-12 px-6 !pb-5"
     >
       <div className="py-12 text-black">
         {/* Header Section */}
@@ -63,7 +63,7 @@ const FAQSection = () => {
         </div>
 
         {/* FAQ Container */}
-        <div className="max-w-6xl mx-auto bg-[#FFFCF0] rounded-lg shadow-lg px-24 py-16">
+        <div className="max-w-6xl mx-auto bg-[#FFFCF0] rounded-lg shadow-lg px-12 md:px-24 py-16">
           {faqData.map((faq, index) => (
             <Accordion selectionMode="multiple" showDivider>
               <AccordionItem

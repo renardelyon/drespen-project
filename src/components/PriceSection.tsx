@@ -5,7 +5,10 @@ import Section from "./Section";
 
 const PriceSection = () => {
   return (
-    <Section id="price" className="!py-10 !px-5">
+    <Section
+      id="price"
+      className="!py-10 !px-5 bg-gradient-to-t from-[#1C1744] to-black"
+    >
       <div className="py-16 z-0">
         {/* Header Section */}
         <div className="text-center text-white mb-28 font-montserrat">
