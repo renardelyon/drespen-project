@@ -2,28 +2,39 @@ import { Card, CardBody } from "@nextui-org/react";
 import Section from "./Section";
 import Rating from "./Rating";
 import ButtonComponent from "./ButtonComponent";
+import FeatureImgOne from "../assets/FeatureImgOne";
+import Marquee from "react-fast-marquee";
+import FeatureImgTwo from "../assets/FeatureImgTwo";
+import FeatureImgThree from "../assets/FeatureImgThree";
+import FeatureImgFour from "../assets/FeatureImgFour";
+import FeatureImgFive from "../assets/FeatureImgFive";
+import FeatureImgSix from "../assets/FeatureImgSix";
+import FeatureImgSeven from "../assets/FeatureImgSeven";
+import FeatureImgEight from "../assets/FeatureImgEight";
+import FeatureImgNine from "../assets/FeatureImgNine";
+import FeatureImgTen from "../assets/FeatureImgTen";
 
 const Hero = () => {
   return (
     <Section
       customPaddings="pt-36 pb-1"
-      className="pt-[12rem] mt-[1.25rem] lg:mt-[5.25rem] bg-conference bg-cover "
+      className="pt-[12rem] mt-[1.25rem] lg:mt-[5.25rem] pb-10 bg-conference bg-cover "
       id="hero"
     >
       <div className="container relative">
         <div className="relative z-1 max-w-[100rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
-          <Card className="mb-6 inline-block bg-gradient-to-t from-color-11 to-color-12 rounded-sm">
+          <Card className="px-3 mb-6 inline-block bg-gradient-to-t from-color-11 to-color-12 rounded-sm">
             <CardBody>
-              <p className="font-montserrat font-extrabold text-lg uppercase text-center">
+              <p className="font-montserrat font-extrabold text-md md:text-xl uppercase text-center">
                 Happening Live on October 8th, 2024 | Dee Why, NSW
               </p>
             </CardBody>
           </Card>
-          <h1 className="h2 mb-6 font-montserrat uppercase font-bold text-white">
+          <h1 className="h2 leading-tight md:text-5xl mx-5 mb-6 font-montserrat uppercase font-bold text-white">
             Quantum Leap Your Life: Unlock The Keys To Extraordinary Health,
             Wealth & Consciousness in One Transformative Day
           </h1>
-          <p className="body-1 max-w-[62rem] mx-auto mb-6 text-white lg:mb-8 font-montserrat font-semibold font-open-sans">
+          <p className="body-1 max-w-[62rem] mx-auto mb-6 text-white lg:mb-8 font-normal font-open-sans">
             Join{" "}
             <b>
               Dr Espen Wold-Jensen, Dr John Demartini, Kelly Gores, and David
@@ -34,14 +45,14 @@ const Hero = () => {
             achieve extraordinary success in body, mind, and money.
           </p>
           <ButtonComponent className="px-3 py-3 sm:px-7 sm:py-7">
-            <p className="font-montserrat text-sm text-white font-bold sm:text-xl uppercase">
+            <p className="font-montserrat text-[10px] min-[328px]:text-sm text-white font-bold sm:text-xl uppercase">
               Secure Your Life-Changing Spot Now
             </p>
           </ButtonComponent>
           <Rating />
         </div>
-        <div className="relative max-w-[24rem] mx-auto md:max-w-[100rem] xl:mb-24">
-          <div className="relative z-1 p-0.5 rounded-2xl bg-white shadow-[0_0_15px_15px_rgba(255,255,255,0.2)]">
+        <div className="relative max-w-[24rem] mx-auto md:max-w-6xl xl:mb-24 pb-10">
+          <div className="relative z-1 p-0.5 rounded-2xl bg-white">
             <div className="relative bg-n-8 rounded-[1rem]" />
             <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
               <iframe
@@ -52,6 +63,54 @@ const Hero = () => {
               />
             </div>
           </div>
+        </div>
+        <div className="text-center font-monserrat text-white mb-4">
+          <h2 className="text-lg md:text:xl lg:text-2xl  font-bold">
+            AS FEATURED IN
+          </h2>
+        </div>
+        <div
+          className={`flex justify-center items-center space-x-6 mx-auto 
+          xl:max-w-7xl max-w-6xl bg-white py-6 rounded-3xl shadow-lg my-6`}
+        >
+          <Marquee
+            pauseOnHover
+            speed={75}
+            gradient
+            gradientWidth={300}
+            className="marquee-gap"
+          >
+            <div>
+              <FeatureImgOne />
+            </div>
+            <div>
+              <FeatureImgTwo />
+            </div>
+            <div>
+              <FeatureImgThree />
+            </div>
+            <div>
+              <FeatureImgFour />
+            </div>
+            <div>
+              <FeatureImgFive />
+            </div>
+            <div>
+              <FeatureImgSix />
+            </div>
+            <div>
+              <FeatureImgSeven />
+            </div>
+            <div>
+              <FeatureImgEight />
+            </div>
+            <div>
+              <FeatureImgNine />
+            </div>
+            <div>
+              <FeatureImgTen />
+            </div>
+          </Marquee>
         </div>
       </div>
     </Section>
