@@ -5,11 +5,11 @@ export default function About() {
   return (
     <Section id="about" className="!pt-10 !pb-1">
       <div className="container relative z-2">
-        <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
+        <div className="relative z-1 max-w-[80rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem] xl:pl-24">
           <div className="bg-black text-white p-8">
             {/* Header */}
             <div className="text-left mx-auto">
-              <h1 className="h2 font-bold font-montserrat uppercase">
+              <h1 className="text-4xl lg:text-6xl font-bold font-montserrat uppercase">
                 Are You Feeling Stuck in a Life That’s Less Than You Deserve?
               </h1>
             </div>
@@ -28,7 +28,7 @@ export default function About() {
                 ].map((item, index) => (
                   <li
                     key={index}
-                    className="flex items-start md:items-center space-x-2"
+                    className="flex items-start md:items-center space-x-2 pb-2"
                   >
                     <Checked />
                     <span>{item}</span>
@@ -36,30 +36,33 @@ export default function About() {
                 ))}
               </ul>
             </div>
-            <div className="relative text-left text-lg md:text-xl space-x-4 font-montserrat">
-              <div className="flex-col justify-between border-l-8 border-l-yellow-300 h-full pl-3">
-                <p className=" pb-3">You're not alone.</p>
+            <div className="text-left text-xl md:text-[26px] flex-col justify-between h-full mb-10 max-w-4xl font-montserrat">
+              <p className=" pb-3 font-bold uppercase">You're not alone.</p>
+              <p className="text-2xl font-normal">
+                Millions find themselves caught in this cycle, using only 0.01%
+                of their true potential. Despite our best efforts, the life
+                we've always wanted remains frustratingly out of reach.
+              </p>
+            </div>
+            <div className="relative text-left text-lg md:text-[32px] leading-tight space-x-4 font-montserrat max-w-4xl">
+              <div className="flex-col justify-between border-l-8 border-l-yellow-300 h-full pl-7">
+                <p className=" pb-5">
+                  But what if there was a way to access the other 99.99% of our
+                  untapped “Quantum” potential?
+                </p>
                 <p>
-                  Millions find themselves caught in this cycle, using only
-                  0.01% of their true potential. Despite our best efforts, the
-                  life we've always wanted remains frustratingly out of reach.
+                  To completely rewire your reality at the Quantum level across
+                  all eight dimensions of your life and business?
                 </p>
               </div>
             </div>
 
-            <p className="text-left font-open-sans text-lg md:text-xl pt-4">
-              But what if there was a way to access the other 99.99% of our
-              untapped “Quantum” potential? To completely rewire your reality at
-              the Quantum level across all eight dimensions of your life and
-              business?
-            </p>
-
             {/* Introduction Section */}
-            <div className="mt-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-left font-montserrat">
+            <div className="mt-12">
+              <h2 className="text-3xl md:text-[42px] font-bold text-left font-montserrat mb-12">
                 INTRODUCING THE QUANTUM SUMMIT
               </h2>
-              <p className="text-lg md:text-xl my-4 text-left font-open-sans">
+              <p className="text-lg md:text-2xl my-4 text-left font-open-sans max-w-5xl">
                 The Quantum Summit, founded by Dr Espen Wold Jensen, is a
                 transformative, consciousness-expanding event that has already
                 impacted over 250,000 lives around the world. With roots in
@@ -79,37 +82,50 @@ export default function About() {
         </div>
       </div>
       {/* Image Grid */}
-      <div className="bg-grid-conf w-full h-[52rem] bg-cover md:bg-contain bg-no-repeat" />
-      <div className="container relative z-2">
+      <div className="bg-grid-conf w-full h-[52rem] bg-cover xl:bg-contain bg-no-repeat" />
+      <div className="container relative z-2 max-w-[80rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
         <div className="bg-black text-white p-8">
           <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
             {/* Story Section */}
             <div className="mt-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-left uppercase font-montserrat">
-                From Tragedy to Transformation: <br></br>Dr Espen's Journey
+              <h2 className="leading-tight text-3xl md:text-[42px] font-bold text-left uppercase font-montserrat mb-7">
+                From Tragedy to{" "}
+                <span className="text-[#FFE054]">Transformation</span>:{" "}
+                <br></br>Dr Espen's Journey
               </h2>
-              <p className="text-lg md:text-xl my-4 text-left font-open-sans">
-                In 2006, Dr Espen's life was forever changed by a near-fatal
-                motorcycle accident. With two broken legs and a systemic
-                life-threatening infection, he was told he might never walk
-                again, let alone survive. Refusing to give in to despair, Dr
-                Espen embarked on a journey that combined ancient healing
-                practices with Quantum science, epigenetics, and the power of
-                consciousness.
-                <br />
-                <br />
-                This journey transformed him into a global leader in Quantum
-                Healing and a four-time seven-figure entrepreneur, helping
-                thousands revolutionise their lives and businesses.
-                <br />
-                <br />
-                Now, with his two decade-long mission, Dr Espen and The Quantum
-                Academy bring you the world’s leading pioneers and experts in
-                healing, transformation and leadership for the Quantum Summit, a
-                life-changing event immersion that fuses ancient wisdom with
-                cutting-edge science to help you realise your full potential in
-                one very transformational day.
-              </p>
+
+              <div className="text-lg md:text-2xl my-4 text-left font-open-sans">
+                <p>
+                  In 2006, Dr Espen's life was forever changed by a near-fatal
+                  motorcycle accident. With two broken legs and a systemic
+                  life-threatening infection, he was told he might never walk
+                  again, let alone survive. Refusing to give in to despair, Dr
+                  Espen embarked on a journey that combined ancient healing
+                  practices with Quantum science, epigenetics, and the power of
+                  consciousness.
+                </p>
+                {/* Image Section */}
+                <div className="w-full my-10">
+                  <img
+                    src="public/about-img-dying-1.png"
+                    alt="Dr Espen tragedy to transformation"
+                    className="rounded-lg"
+                  />
+                </div>
+                <p>
+                  This journey transformed him into a global leader in Quantum
+                  Healing and a four-time seven-figure entrepreneur, helping
+                  thousands revolutionise their lives and businesses.
+                  <br />
+                  <br />
+                  Now, with his two decade-long mission, Dr Espen and The
+                  Quantum Academy bring you the world’s leading pioneers and
+                  experts in healing, transformation and leadership for the
+                  Quantum Summit, a life-changing event immersion that fuses
+                  ancient wisdom with cutting-edge science to help you realise
+                  your full potential in one very transformational day.
+                </p>
+              </div>
             </div>
           </div>
         </div>
