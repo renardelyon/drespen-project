@@ -44,8 +44,8 @@ const Hero = () => {
             life-changing tools and strategies to break through your limits and
             achieve extraordinary success in body, mind, and money.
           </p>
-          <ButtonComponent className="px-3 py-3 sm:px-7 sm:py-7">
-            <p className="font-montserrat text-[10px] min-[328px]:text-sm text-white font-bold sm:text-xl uppercase">
+          <ButtonComponent className="px-3 py-3 sm:px-9 sm:py-12">
+            <p className="font-montserrat text-[10px] min-[328px]:text-sm text-white font-bold sm:text-[28px] uppercase">
               Secure Your Life-Changing Spot Now
             </p>
           </ButtonComponent>
