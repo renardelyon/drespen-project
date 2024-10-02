@@ -85,7 +85,7 @@ export default function About() {
       <div className="bg-grid-conf w-full h-[52rem] bg-cover xl:bg-contain bg-no-repeat" />
       <div className="container relative z-2 max-w-[80rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
         <div className="bg-black text-white p-8">
-          <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
+          <div className="relative z-1 max-w-[62rem] mx-auto text-center">
             {/* Story Section */}
             <div className="mt-8">
               <h2 className="leading-tight text-3xl md:text-[42px] font-bold text-left uppercase font-montserrat mb-7">

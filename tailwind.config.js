@@ -97,7 +97,9 @@ export default {
         "conference": "url('/Frame 17036.png')",
         "grid-conf": "url('/Group 15605.png')",
         "transformation-img": "url('/transformation-img-1.png')",
-        "card-img-1": "url('/image 681.png')",
+        "overlay": "url('/Overlay.png')",
+
+
         "break-card-img-1": "url('/AUGUST 25 3.png')",
 
         "conic-gradient":
