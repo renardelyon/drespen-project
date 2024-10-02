@@ -6,13 +6,15 @@ import { GoAlertFill } from "react-icons/go";
 export default function Header() {
   return (
     <div className="fixed top-0 left-0 w-full z-50 bg-transparent">
-      <div className="flex bg-black items-center justify-between py-2 px-5 lg:px-10 lg:py-4 xl:px-14 xl:py-6 max-lg:py-6">
+      <div className="flex bg-black items-center justify-between py-2 px-5 lg:px-10 lg:py-4 xl:px-14 xl:py-6 max-lg:py-6 max-h-[115px]">
         <a className="block w-[12rem] xl:mr-8" href="hero">
-          <Logo />
+          <Logo className="w-[8rem] md:w-[200px]" />
         </a>
 
-        <ButtonComponent>
-          <p className="font-montserrat text-white font-bold">BUY TICKET</p>
+        <ButtonComponent className="py-0 md:py-7">
+          <p className="font-montserrat text-white font-bold text-xs xs:text-sm md:text-2xl px-0 md:px-5">
+            BUY TICKET
+          </p>
         </ButtonComponent>
       </div>
       {/* Countdown Timer and Discount Section */}
@@ -24,14 +26,16 @@ export default function Header() {
         <span className="hidden items-center space-x-1 md:flex">
           <i className="fas fa-exclamation-triangle"></i>
           <span className="text-sm flex items-center">
-            <GoAlertFill className="mr-2" />
-            <p className="font-open-sans font-bold">70% DISCOUNT EXPIRES IN:</p>
+            <GoAlertFill className="mr-2 text-sm" />
+            <p className="font-open-sans font-bold md:text-md xl:text-lg uppercase">
+              Your 70% DISCOUNT EXPIRES IN:
+            </p>
           </span>
         </span>
         <CountdownTimer className="pr-4" />
         {/* Ticket Button Inside Countdown */}
-        <ButtonComponent>
-          <p className="font-montserrat text-white font-bold text-medium">
+        <ButtonComponent className="py-7">
+          <p className="font-montserrat text-white font-bold lg:text-md xl:text-lg px-5">
             GET MY TICKET NOW - 70% OFF
           </p>
         </ButtonComponent>
@@ -46,8 +50,8 @@ export default function Header() {
             <i className="fas fa-exclamation-triangle"></i>
             <span className="text-sm flex items-center">
               <GoAlertFill className="mr-2" />
-              <p className="font-open-sans font-bold text-md">
-                70% DISCOUNT EXPIRES IN:
+              <p className="font-open-sans font-bold text-xs uppercase">
+                Your 70% DISCOUNT EXPIRES IN:
               </p>
             </span>
           </span>
@@ -58,7 +62,7 @@ export default function Header() {
           <p className="hidden sm:block font-montserrat text-white font-bold text-sm">
             GET MY TICKET NOW <br /> 70% OFF
           </p>
-          <p className="block sm:hidden font-montserrat text-white font-bold text-sm">
+          <p className="block sm:hidden font-montserrat text-white font-bold text-[10px] sm:text-sm">
             GET TICKET
           </p>
         </ButtonComponent>

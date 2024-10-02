@@ -1,6 +1,7 @@
-export default function Logo() {
+export default function Logo({ className }: TLogo) {
   return (
     <svg
+      className={className}
       width="200"
       height="49"
       viewBox="0 0 200 49"
@@ -32,7 +33,6 @@ export default function Logo() {
   );
 }
 
-// type TLogo = {
-//   width?: number;
-//   height?: number;
-// };
+type TLogo = {
+  className?: string;
+};
