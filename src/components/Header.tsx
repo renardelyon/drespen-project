@@ -6,7 +6,7 @@ import { GoAlertFill } from "react-icons/go";
 export default function Header() {
   return (
     <div className="fixed top-0 left-0 w-full z-50 bg-transparent">
-      <div className="flex bg-black items-center justify-between py-2 px-5 lg:px-10 lg:py-4 xl:px-14 xl:py-6 max-lg:py-6 max-h-[115px]">
+      <div className="flex bg-black items-center justify-between py-2 px-5 lg:px-10 lg:py-4 xl:px-32 xl:py-6 max-lg:py-6 max-h-[115px]">
         <a className="block w-[12rem] xl:mr-8" href="hero">
           <Logo className="w-[8rem] md:w-[200px]" />
         </a>
@@ -20,8 +20,8 @@ export default function Header() {
       {/* Countdown Timer and Discount Section */}
       <div
         className={`hidden lg:flex items-center justify-center
-          bg-gradient-to-r from-color-7 from-[10%] via-color-8 via-[29%] to-color-7
-        text-white px-4 py-4 rounded-bl-3xl rounded-br-3xl space-x-4`}
+          bg-gradient-to-r from-color-7 from-[-10%] xl:from-[-20%] via-color-8 via-[29%] to-color-7 to-[150%]
+        text-white px-4 py-4 rounded-b-[3rem] space-x-4`}
       >
         <span className="hidden items-center space-x-1 md:flex">
           <i className="fas fa-exclamation-triangle"></i>
@@ -42,7 +42,7 @@ export default function Header() {
       </div>
       <div
         className={`flex lg:hidden items-center justify-center rounded-t-lg
-          bg-gradient-to-r bg-gradient-r from-color-7 from-[-80%] via-color-8 via-[80%] to-color-7 to-[110%]
+          bg-gradient-to-r from-color-7 from-[-80%] via-color-8 via-[80%] to-color-7 to-[110%]
         text-white px-4 py-4 space-x-4 fixed w-full bottom-0 left-0`}
       >
         <div className="flex flex-col">
