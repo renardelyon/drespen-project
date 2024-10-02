@@ -9,14 +9,14 @@ export default function CountdownTimer({ className }: TCountdownTimer) {
     <div
       className={` ${className} flex font-open-sans items-center space-x-2 text-lg font-bold`}
     >
-      <span className="text-2xl">{hours}</span>
-      <span className="text-sm font-semibold">Hrs</span>
+      <span className="text-lg md:text-2xl xl:text-4xl">{hours}</span>
+      <span className="text-lg md:text-xl font-semibold">Hrs</span>
       <span>:</span>
-      <span className="text-2xl">{minutes}</span>
-      <span className="text-sm font-semibold">Mins</span>
+      <span className="text-lg md:text-2xl xl:text-4xl">{minutes}</span>
+      <span className="text-lg md:text-xl font-semibold">Mins</span>
       <span>:</span>
-      <span className="text-2xl">{seconds}</span>
-      <span className="text-sm font-semibold">Secs</span>
+      <span className="text-lg md:text-2xl xl:text-4xl">{seconds}</span>
+      <span className="text-lg md:text-xl font-semibold">Secs</span>
     </div>
   );
 }
