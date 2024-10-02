@@ -24,7 +24,7 @@ function App() {
         <Header />
         <Hero />
         <About />
-        <Benefit />
+        {/* <Benefit />
         <Breakthrough />
         <TransformationSection />
         <IntroSection />
@@ -35,10 +35,10 @@ function App() {
         <ScheduleSection />
         <PriceSection />
         <FAQSection />
-        {/* <SocialMediaSection /> */}
+        <SocialMediaSection />
         <Footer />
         <Analytics />
-        <SpeedInsights />
+        <SpeedInsights /> */}
       </div>
     </>
   );
