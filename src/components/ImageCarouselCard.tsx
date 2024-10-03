@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const ImageCarouselCard = () => {
   // Array of images
   const images = [
     "/potrait-carousel-1.png",
-    "/potrait-carousel-1.png",
-    "/potrait-carousel-1.png",
+    "/potrait-carousel-2.png",
+    "/potrait-carousel-3.png",
   ];
 
   const carouselData = [
@@ -59,17 +59,23 @@ const ImageCarouselCard = () => {
   // State to store the current image index
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  console.log("currentImageIndex", currentImageIndex);
+  // Automatically change image every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, import.meta.env.VITE_EVENT_CAROUSEL_INTERVAL); // Change image every 5 seconds
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, [images.length]);
 
   return (
-    <div className="p-8 rounded-lg max-w-6xl max-h-xl mx-auto">
+    <div className="p-8 max-w-7xl max-h-xl mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-0">
         {/* Image Section */}
         <div className="relative max-h-[64-rem]">
           <img
             src={images[currentImageIndex]}
             alt="Expert Image"
-            className="rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none  shadow-lg max-w-6xl w-full"
+            className="rounded-t-2xl lg:rounded-l-2xl lg:rounded-tr-none  shadow-lg max-w-6xl w-full"
           />
 
           {/* Rectangles below the image */}
@@ -89,19 +95,17 @@ const ImageCarouselCard = () => {
         {/* Text Section */}
         <div
           className={`${carouselData[currentImageIndex].bgColor} text-white p-6 
-          rounded-b-lg lg:rounded-r-lg lg:rounded-bl-none relative h-full font-montserrat`}
+          rounded-b-2xl lg:rounded-r-2xl lg:rounded-bl-none relative h-full font-montserrat`}
         >
-          <div className="text-yellow-400 text-[82px] max-h-[68px] h-full">
+          <div className="text-yellow-400 text-[92px] max-h-[68px] h-full">
             “
           </div>
-          <p className="text-4xl mb-6 pb-20">
+          <p className="text-3xl xl:text-5xl mb-6 pb-20">
             {carouselData[currentImageIndex].quote}
           </p>
-          <div className="absolute bottom-10 right-10 text-left">
+          <div className="text-sm sm:text-md absolute bottom-10 right-10 text-left">
             <p className="font-bold"> {carouselData[currentImageIndex].name}</p>
-            <p className="text-sm">
-              {carouselData[currentImageIndex].occupation}
-            </p>
+            <p>{carouselData[currentImageIndex].occupation}</p>
           </div>
         </div>
       </div>
