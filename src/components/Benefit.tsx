@@ -104,12 +104,12 @@ const Benefit = () => {
               another day pass feeling less than extraordinary…
             </p>
           </div>
-          <ButtonComponent className="px-3 py-3 sm:px-[100px] sm:py-12">
-            <p className="font-montserrat text-[10px] min-[328px]:text-sm text-white font-bold sm:text-[28px] uppercase">
+          <ButtonComponent className="px-3 py-3 md:px-6 md:py-8 lg:px-[100px] lg:py-12">
+            <p className="font-montserrat text-[10px] min-[328px]:text-sm text-white font-bold lg:text-xl xl:text-[28px] uppercase">
               Transform Your Life Today!
             </p>
           </ButtonComponent>
-          <p className="pt-4 text-xl text-white font-open-sans italic">
+          <p className="pt-4 text-md text-center md:text-xl text-white font-open-sans italic">
             With only 23 Diamond spots available, time is running out to secure
             your spot.
           </p>
