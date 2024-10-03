@@ -99,9 +99,6 @@ export default {
         "transformation-img": "url('/transformation-img-1.png')",
         "overlay": "url('/Overlay.png')",
 
-
-        "break-card-img-1": "url('/AUGUST 25 3.png')",
-
         "conic-gradient":
           "conic-gradient(from 225deg, #FFC876, #79FFF7, #9F53FF, #FF98E2, #FFC876)",
       },
