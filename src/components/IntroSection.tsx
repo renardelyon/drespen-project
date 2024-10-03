@@ -5,13 +5,13 @@ const IntroSection = () => {
   return (
     <Section
       id="transformation"
-      className="!pt-1 !pb-1 bg-gradient-to-t from-color-13 to-black"
+      className="!pb-1 bg-gradient-to-t from-color-13 from-[-20%] to-black"
     >
       <div className="container relative">
         <div className=" min-h-screen text-white py-12">
           {/* Section Heading */}
           <div className="text-left mb-12 px-4 max-w-[44rem] mx-auto">
-            <h1 className=" text-center text-4xl md:text-5xl font-bold mb-4 font-montserrat">
+            <h1 className="text-center text-4xl md:text-5xl font-bold mb-4 font-montserrat">
               WHY QUANTUM LEAPING IS A GAME-CHANGER
             </h1>
           </div>
@@ -19,19 +19,19 @@ const IntroSection = () => {
           {/* Feature Blocks */}
           <div className="space-y-16">
             {/* Block 1 */}
-            <div className="max-w-3xl mx-auto space-y-4">
-              <p className="text-xl font-semibold font-montserrat uppercase">
+            <div className="max-w-4xl mx-auto space-y-4">
+              <p className="text-lg md:text-2xl font-bold font-montserrat uppercase">
                 Quantum Leaping offers more than just a path to healing:
               </p>
-              <p className="text-lg font-open-sans">
+              <p className="text-lg md:text-2xl font-normal font-open-sans">
                 It’s a practical, life-enhancing method that helps you achieve
                 clarity, vitality, and success. By balancing your mind, body,
                 and energy, Quantum Leaping equips you to break free from
                 subconscious mental and emotional blocks, improve
                 decision-making, and elevate your performance—whether in
-                business, leadership or in your personal life.
+                business, leadership or in your personal life. 
               </p>
-              <h2 className="text-4xl font-bold mb-6 font-montserrat pt-8">
+              <h2 className="text-4xl md:text-5xl font-bold md:pb-10 font-montserrat pt-10">
                 HERE'S HOW IT WORKS:
               </h2>
               {[
@@ -51,7 +51,6 @@ const IntroSection = () => {
                       )(Well Being Journal).
                     </>
                   ),
-                  src: "/IMG_7900 1.png",
                 },
                 {
                   title: "Activate Cellular Vitality",
@@ -65,7 +64,6 @@ const IntroSection = () => {
                       <i> ​(JNeurosci) ​(BioMed Central)</i>.
                     </>
                   ),
-                  src: "/IMG_7900 1.png",
                 },
                 {
                   title: "Access Heightened States of Consciousness",
@@ -78,7 +76,6 @@ const IntroSection = () => {
                       personal and professional insights​​ <i>(JNeurosci).</i>
                     </>
                   ),
-                  src: "/IMG_7900 1.png",
                 },
                 {
                   title: "Manifest Your Desires with Quantum Precision",
@@ -90,20 +87,20 @@ const IntroSection = () => {
                       opportunities with unprecedented clarity and speed.
                     </>
                   ),
-                  src: "/IMG_7900 1.png",
                 },
-              ].map(({ title, content, src }) => (
+              ].map(({ title, content }, index) => (
                 <>
-                  <h3 className="text-3xl font-bold font-montserrat pt-10 uppercase">
+                  <h3 className="leading-tight text-3xl md:text-[42px] font-bold font-montserrat pb-6 pt-10 uppercase">
+                    <span className="text-[#FFE054]">{`0${index + 1} `}</span>
                     {title}
                   </h3>
-                  <p className=" text-lg text-white font-open-sans pb-2 max-w-[44rem]">
+                  <p className="text-lg md:text-2xl text-white font-open-sans pb-6 max-w-4xl">
                     {content}
                   </p>
                   <img
-                    src={src}
+                    src={`/intro-img-${index + 1}.png`}
                     alt="Rewire Neural Pathways"
-                    className="rounded-lg shadow-lg w-full max-[64rem]"
+                    className="rounded-lg shadow-lg w-full pb-10"
                   />
                 </>
               ))}
