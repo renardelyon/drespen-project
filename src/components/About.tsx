@@ -14,11 +14,11 @@ export default function About() {
               </h1>
             </div>
             {/* Checkmark List */}
-            <div className="my-8 text-xl md:text-2xl space-y-4">
+            <div className="my-8 text-lg md:text-2xl space-y-4">
               <p className="font-bold text-left font-montserrat uppercase">
                 Do you wake up each day feeling:
               </p>
-              <ul className="space-y-2 list-none text-lg md:text-xl text-left font-open-sans">
+              <ul className="space-y-2 list-none text-lg md:text-2xl text-left font-open-sans">
                 {[
                   "Drained and directionless, instead of energised and purposeful?",
                   "Experiencing self-doubt, rather than confidence and empowerment?",
@@ -38,7 +38,7 @@ export default function About() {
             </div>
             <div className="text-left text-xl md:text-[26px] flex-col justify-between h-full mb-10 max-w-4xl font-montserrat">
               <p className=" pb-3 font-bold uppercase">You're not alone.</p>
-              <p className="text-2xl font-normal">
+              <p className="text-lg md:text-2xl font-normal">
                 Millions find themselves caught in this cycle, using only 0.01%
                 of their true potential. Despite our best efforts, the life
                 we've always wanted remains frustratingly out of reach.

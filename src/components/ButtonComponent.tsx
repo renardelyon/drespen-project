@@ -8,6 +8,8 @@ const ButtonComponent = ({
 }: TButtonComponent) => {
   return (
     <Button
+      as="a"
+      href="https://drespen.com/the-quantum-experience-sydney-8th-october-2024/"
       className={`${className} rounded-sm ${
         buttonColor ||
         `bg-gradient-to-t

@@ -136,7 +136,7 @@ const Breakthrough = () => {
         <div className="text-white min-h-screen py-24 flex flex-col items-center">
           {/* Main Heading */}
           <div className="text-center px-4 mb-12 max-w-[72rem]">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 font-montserrat uppercase">
+            <h1 className="text-3xl md:text-5xl font-bold mb-4 font-montserrat uppercase">
               You’ll Experience Three Life-Altering Quantum Breakthroughs
             </h1>
             <p className="text-lg md:text-2xl max-w-6xl mx-auto font-open-sans pt-6">
@@ -212,7 +212,7 @@ const Breakthrough = () => {
               the Quantum Leap?
             </p>
             <ButtonComponent className="mt-12 px-3 py-3 sm:px-[60px] sm:py-14 max-w-2xl">
-              <p className="text-wrap font-montserrat text-[10px] text-white font-bold lg:text-xl xl:text-[28px] min-[328px]:text-xs sm:leading-tight uppercase">
+              <p className="min-[376px]:py-0 text-wrap font-montserrat text-[10px] text-white font-bold lg:text-xl xl:text-[28px] min-[328px]:text-xs sm:leading-tight uppercase">
                 Yes, I’m Ready to Quantum Leap My Life – Reserve My Spot!
               </p>
             </ButtonComponent>

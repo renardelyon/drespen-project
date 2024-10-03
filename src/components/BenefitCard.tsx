@@ -15,7 +15,11 @@ const BenefitCard = ({ header, content, className, image }: TBenefitCard) => {
         <p className="tracking-wide leading-snug text-xs md:text-[18px] text-gray-300 mb-4 pt-3 !font-open-sans">
           {content}
         </p>
-        <Button className="text-lg md:text-2xl rounded-sm border-2 border-white bg-transparent text-white  font-semibold px-12 p-6 mt-9">
+        <Button
+          as="a"
+          href="https://drespen.com/the-quantum-experience-sydney-8th-october-2024/"
+          className="text-lg md:text-2xl rounded-sm border-2 border-white bg-transparent text-white  font-semibold px-12 p-6 mt-9"
+        >
           BUY TICKET
         </Button>
       </div>
