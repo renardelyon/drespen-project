@@ -23,9 +23,9 @@ const Hero = () => {
     >
       <div className="container relative">
         <div className="relative z-1 max-w-[100rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
-          <Card className="px-3 mb-6 inline-block bg-gradient-to-t from-color-11 to-color-12 rounded-sm">
+          <Card className="px-2 py-1 mb-6 inline-block bg-gradient-to-t from-color-11 to-color-12 rounded-md">
             <CardBody>
-              <p className="font-montserrat font-extrabold text-md md:text-xl uppercase text-center">
+              <p className="font-montserrat font-bold text-md md:text-xl uppercase text-center">
                 Happening Live on October 8th, 2024 | Dee Why, NSW
               </p>
             </CardBody>
@@ -35,14 +35,12 @@ const Hero = () => {
             Wealth & Consciousness in One Transformative Day
           </h1>
           <p className="body-1 max-w-[62rem] mx-auto mb-6 text-white lg:mb-8 font-normal font-open-sans">
-            Join{" "}
-            <b>
-              Dr Espen Wold-Jensen, Dr John Demartini, Kelly Gores, and David
-              ‘Avocado’ Wolfe
-            </b>{" "}
-            at the exclusive Quantum Summit 2024, where you'll discover
-            life-changing tools and strategies to break through your limits and
-            achieve extraordinary success in body, mind, and money.
+            Join <b>Dr. Espen Wold-Jensen</b> and <b>Dr. John Demartini</b> in
+            person, with virtual appearances by <b>Kelly Gores</b> and{" "}
+            <b>David 'Avocado' Wolfe</b> at the exclusive Quantum Summit 2024,
+            where you'll discover life-changing tools and strategies to break
+            through your limits and achieve extraordinary success in body, mind,
+            and money.
           </p>
           <ButtonComponent className="px-3 py-3 md:px-6 md:py-8 lg:px-9 lg:py-12">
             <p className="font-montserrat text-[10px] min-[328px]:text-sm text-white font-bold lg:text-xl xl:text-[28px] uppercase">
@@ -64,8 +62,8 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="text-center font-monserrat text-white mb-4">
-          <h2 className="text-lg md:text:xl lg:text-2xl  font-bold">
+        <div className="text-center text-white mb-4">
+          <h2 className="text-lg md:text:xl lg:text-2xl font-semibold font-montserrat">
             AS FEATURED IN
           </h2>
         </div>

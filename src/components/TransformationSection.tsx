@@ -18,7 +18,7 @@ const TransformationSection = () => {
             <h1 className="text-4xl lg:text-5xl font-bold mb-8 font-montserrat">
               BECOME PART OF A GLOBAL TRANSFORMATION MOVEMENT
             </h1>
-            <p className="text-gray-600 max-w-6xl mx-auto font-open-sans text-lg md:text-2xl font-semibold">
+            <p className="max-w-[1100px] mx-auto font-open-sans text-lg md:text-2xl font-normal">
               This extraordinary once-a-year event is your gateway to joining a
               worldwide community of visionaries, change-makers, and conscious
               leaders. By participating, you're not just transforming your own
@@ -89,16 +89,17 @@ const TransformationSection = () => {
               },
             ].map(({ title, subtitle }, index) => (
               <div
+                key={index}
                 className={`border-l-[12px] md:ml-32 min-[1520px]:ml-0 border-l-red-500 pl-5 ${
-                  index == 1 && "min-[1520px]:-ml-14"
+                  index == 1 && "min-[1520px]:-ml-16"
                 }`}
               >
-                <p className="text-3xl min-[1520px]:text-5xl font-bold">
+                <div className="text-3xl min-[1520px]:text-4xl font-bold">
                   {title}
-                </p>
-                <p className="text-lg md:text-2xl font-normal pt-2">
+                </div>
+                <div className="text-gray-600 font-medium text-lg md:text-xl pt-2">
                   {subtitle}
-                </p>
+                </div>
               </div>
             ))}
           </div>
@@ -109,17 +110,17 @@ const TransformationSection = () => {
               <img
                 src="/Q ACADEMY - Black 1.png"
                 alt="Quantum Academy"
-                className="inline-block w-[160px] md:w-[200px] xl:w-[260px] md:mr-16"
+                className="inline-block w-[160px] md:w-[200px] xl:w-[250px] md:mr-16"
               />
               <img
                 src="/OFFICIAL RESEARCH PARTNERS.png"
                 alt="Partner 1"
-                className="inline-block w-[140px] md:w-[180px] xl:w-[228px] md:mr-16"
+                className="inline-block w-[140px] md:w-[180px] xl:w-[218px] md:mr-16"
               />
               <img
                 src="/James-cook-u.png"
                 alt="Partner 2"
-                className="inline-block w-[120px] md:w-[160px] xl:w-[175px]"
+                className="inline-block w-[120px] md:w-[160px] xl:w-[165px]"
               />
             </div>
           </div>
@@ -129,10 +130,10 @@ const TransformationSection = () => {
             <h2 className="!leading-[1.15] text-4xl md:text-5xl font-bold mb-10 !font-montserrat">
               QUANTUM LEAPING WILL REWRITE YOUR REALITY AT THE SUBATOMIC LEVEL
             </h2>
-            <p className="border-l-8 mb-10 pl-4 border-l-red-500 italic text-2xl md:text-3xl font-bold !font-montserrat inline-block">
-              "We don't have to go without, when we go within"
+            <p className="border-l-8 mb-10 pl-4 border-l-red-500 italic text-2xl md:text-3xl font-semibold !font-montserrat inline-block">
+              “We don't have to go without, when we go within”
             </p>
-            <p className="text-lg md:text-2xl mx-auto">
+            <p className="text-lg md:text-[22px] mx-auto">
               Unlike traditional self-help methods, Quantum Leaping is a
               breakthrough approach that rewrites your reality at the subatomic
               level, unlocking the 99.99% of untapped potential within you. Yes
@@ -142,10 +143,10 @@ const TransformationSection = () => {
               Energy, by simply removing the boundaries and blockages from our
               body, mind and soul.
             </p>
-            <p className=" text-lg md:text-2xl max-w-2xl mx-auto mt-6">
+            <p className=" text-lg md:text-[22px] max-w-2xl mx-auto mt-6">
               Would you take the leap?
             </p>
-            <p className="text-lg md:text-2xl mx-auto mt-6">
+            <p className="text-lg md:text-[22px] mx-auto mt-6">
               What if ancient and timeless techniques such as meditation,
               breathwork, advanced self-development and energy mastery could
               help you harness the power of the Quantum field to propel your

@@ -130,7 +130,7 @@ const Breakthrough = () => {
   return (
     <Section
       id="breakthrough"
-      className="!pt-1 !pb-1 bg-gradient-to-b from-color-13 from-[-10%] to-black to-[50%]"
+      className="!pt-1 !pb-1 bg-gradient-to-b from-color-13 from-[0%] to-black to-[50%]"
     >
       <div className="container relative">
         <div className="text-white min-h-screen py-24 flex flex-col items-center">
@@ -148,17 +148,21 @@ const Breakthrough = () => {
 
           {/* Breakthrough Cards */}
           {testimonialsCardContent.map(
-            ({
-              number,
-              title,
-              content,
-              testimony,
-              testimonyOwner,
-              isOpposite,
-              img,
-              qImg,
-            }) => (
+            (
+              {
+                number,
+                title,
+                content,
+                testimony,
+                testimonyOwner,
+                isOpposite,
+                img,
+                qImg,
+              },
+              index
+            ) => (
               <div
+                key={index}
                 className={`rounded-md space-y-12 border-2 my-12 mb-12 
                   md:mb-24 max-w-8xl w-full border-gray-700`}
               >
@@ -194,29 +198,29 @@ const Breakthrough = () => {
 
           {/* CTA Section */}
           <div className="text-center mx-12 lg:mx-32 xl:mx-52 mt-12 font-open-sans">
-            <p className="text-md md:text-2xl mb-4">
+            <p className="text-md md:text-[22px] mb-4">
               This is your opportunity to rise above limitations of the outdated
               principles and paradigms and embrace your full potential.
             </p>
-            <p className="text-md md:text-2xl mb-4">
+            <p className="text-md md:text-[22px] mb-4">
               <b className="italic">
                 "If everything is Energy, then how do you tap into the bottom of
                 your potential?"
               </b>
               <br />- Dr Espen
             </p>
-            <p className="text-lg md:text-2xl mb-4">
+            <p className="text-md md:text-[22px] mb-4">
               And so then what if, by expanding your Consciousness and Energy,
               bringing coherence to the Heart and Equilibrium to the Mind, you
               could finally create the life you deserve? Are you ready to take
               the Quantum Leap?
             </p>
             <ButtonComponent className="mt-12 px-3 py-3 sm:px-[60px] sm:py-14 max-w-2xl">
-              <p className="min-[376px]:py-0 text-wrap font-montserrat text-[10px] text-white font-bold lg:text-xl xl:text-[28px] min-[328px]:text-xs sm:leading-tight uppercase">
+              <p className="min-[376px]:py-0 text-wrap font-montserrat text-[10px] text-white font-bold lg:text-xl xl:text-[26px] min-[328px]:text-xs sm:leading-tight uppercase">
                 Yes, I’m Ready to Quantum Leap My Life – Reserve My Spot!
               </p>
             </ButtonComponent>
-            <p className="pt-4 text-md text-center md:text-xl text-white font-open-sans italic">
+            <p className="pt-4 text-md text-center md:text-lg text-white font-open-sans italic">
               With only 23 Diamond spots available, time is running out to
               secure your spot.
             </p>

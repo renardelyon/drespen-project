@@ -94,18 +94,23 @@ const ImageCarouselCard = () => {
 
         {/* Text Section */}
         <div
-          className={`${carouselData[currentImageIndex].bgColor} text-white p-6 
+          className={`${carouselData[currentImageIndex].bgColor} text-white py-6 px-14 
           rounded-b-2xl lg:rounded-r-2xl lg:rounded-bl-none relative h-full font-montserrat`}
         >
           <div className="text-yellow-400 text-[92px] max-h-[68px] h-full">
             “
           </div>
-          <p className="text-3xl xl:text-5xl mb-6 pb-20">
+          <p className="font-medium text-3xl xl:text-4xl mb-6 pb-20">
             {carouselData[currentImageIndex].quote}
           </p>
-          <div className="text-sm sm:text-md absolute bottom-10 right-10 text-left">
-            <p className="font-bold"> {carouselData[currentImageIndex].name}</p>
-            <p>{carouselData[currentImageIndex].occupation}</p>
+          <div className="text-sm sm:text-lg absolute bottom-10 right-10 text-right">
+            <p className="font-semibold">
+              {" "}
+              {carouselData[currentImageIndex].name}
+            </p>
+            <p className="!leading-tight sm:!text-[16px]">
+              {carouselData[currentImageIndex].occupation}
+            </p>
           </div>
         </div>
       </div>

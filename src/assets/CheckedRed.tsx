@@ -20,8 +20,8 @@ export default function Checked({ width, height }: TChecked) {
           y2="30"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF8F8F" />
-          <stop offset="1" stop-color="#FF5146" />
+          <stop stopColor="#FF8F8F" />
+          <stop offset="1" stopColor="#FF5146" />
         </linearGradient>
       </defs>
     </svg>

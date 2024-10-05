@@ -10,10 +10,10 @@ const ButtonComponent = ({
     <Button
       as="a"
       href="https://drespen.com/the-quantum-experience-sydney-8th-october-2024/"
-      className={`${className} rounded-sm ${
+      className={`${className} rounded-md ${
         buttonColor ||
-        `bg-gradient-to-t
-       from-color-9 from-20% to-color-10 shadow-[0_6px_0_rgba(190,47,38,1)]`
+        `bg-gradient-to-t hover:!brightness-125 hover:!opacity-100 !transition !duration-200
+       from-color-9 from-[60%] to-color-10 to-[110%] shadow-[0_6px_0_rgba(190,47,38,1)]`
       }`}
     >
       {children}

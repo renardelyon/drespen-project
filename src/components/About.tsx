@@ -8,9 +8,10 @@ export default function About() {
         <div className="relative z-1 max-w-[80rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem] xl:pl-24">
           <div className="bg-black text-white p-8">
             {/* Header */}
-            <div className="text-left mx-auto">
-              <h1 className="text-4xl lg:text-6xl font-bold font-montserrat uppercase">
-                Are You Feeling Stuck in a Life That’s Less Than You Deserve?
+            <div className="text-left mx-auto pb-5">
+              <h1 className="!leading-tight text-4xl lg:text-5xl font-bold font-montserrat uppercase">
+                Are You Feeling Stuck in a Life <br />
+                That’s Less Than You Deserve?
               </h1>
             </div>
             {/* Checkmark List */}
@@ -18,7 +19,7 @@ export default function About() {
               <p className="font-bold text-left font-montserrat uppercase">
                 Do you wake up each day feeling:
               </p>
-              <ul className="space-y-2 list-none text-lg md:text-2xl text-left font-open-sans">
+              <ul className="space-y-2 list-none text-lg md:text-xl text-left font-open-sans">
                 {[
                   "Drained and directionless, instead of energised and purposeful?",
                   "Experiencing self-doubt, rather than confidence and empowerment?",
@@ -36,15 +37,15 @@ export default function About() {
                 ))}
               </ul>
             </div>
-            <div className="text-left text-xl md:text-[26px] flex-col justify-between h-full mb-10 max-w-4xl font-montserrat">
-              <p className=" pb-3 font-bold uppercase">You're not alone.</p>
-              <p className="text-lg md:text-2xl font-normal">
+            <div className="text-left text-xl md:text-[24px] flex-col justify-between h-full mb-10 max-w-4xl font-montserrat">
+              <p className=" pb-3 font-semibold uppercase">You're not alone.</p>
+              <p className="text-lg md:text-[22px] font-normal">
                 Millions find themselves caught in this cycle, using only 0.01%
                 of their true potential. Despite our best efforts, the life
                 we've always wanted remains frustratingly out of reach.
               </p>
             </div>
-            <div className="relative text-left text-lg md:text-[32px] leading-tight space-x-4 font-montserrat max-w-4xl">
+            <div className="font-[450] relative text-left text-lg md:text-[30px] leading-tight space-x-4 font-montserrat max-w-3xl">
               <div className="flex-col justify-between border-l-8 border-l-yellow-300 h-full pl-7">
                 <p className=" pb-5">
                   But what if there was a way to access the other 99.99% of our
@@ -58,11 +59,11 @@ export default function About() {
             </div>
 
             {/* Introduction Section */}
-            <div className="mt-12">
-              <h2 className="text-3xl md:text-[42px] font-bold text-left font-montserrat mb-12">
+            <div className="mt-12 max-w-4xl">
+              <h2 className="text-3xl md:text-[40px] font-bold text-left font-montserrat mb-12">
                 INTRODUCING THE QUANTUM SUMMIT
               </h2>
-              <p className="text-lg md:text-2xl my-4 text-left font-open-sans max-w-5xl">
+              <p className="text-lg md:text-[22px] my-4 text-left font-open-sans max-w-5xl">
                 The Quantum Summit, founded by Dr Espen Wold Jensen, is a
                 transformative, consciousness-expanding event that has already
                 impacted over 250,000 lives around the world. With roots in
@@ -88,14 +89,14 @@ export default function About() {
           <div className="relative z-1 max-w-[62rem] mx-auto text-center">
             {/* Story Section */}
             <div className="mt-8">
-              <h2 className="leading-tight text-3xl md:text-[42px] font-bold text-left uppercase font-montserrat mb-7">
+              <h2 className="leading-tight text-3xl md:text-[40px] font-bold text-left uppercase font-montserrat mb-7">
                 From Tragedy to{" "}
                 <span className="text-[#FFE054]">Transformation</span>:{" "}
                 <br></br>Dr Espen's Journey
               </h2>
 
-              <div className="text-lg md:text-2xl my-4 text-left font-open-sans">
-                <p>
+              <div className="leading-snug text-lg md:text-[22px] my-4 text-left font-open-sans max-w-4xl">
+                <p className="">
                   In 2006, Dr Espen's life was forever changed by a near-fatal
                   motorcycle accident. With two broken legs and a systemic
                   life-threatening infection, he was told he might never walk
