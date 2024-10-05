@@ -8,10 +8,10 @@ const EventSection = () => {
       id="event"
       className="!pt-1 bg-gradient-to-b from-color-14 to-color-15"
     >
-      <div className="container py-24 text-black">
+      <div className="container !px-6 py-24 text-black">
         {/* Section Heading */}
         <div className="text-center mb-12 px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 max-w-3xl mx-auto font-montserrat">
+          <h1 className="!leading-tight text-4xl md:text-5xl font-bold mb-4 max-w-3xl mx-auto font-montserrat">
             WHY QUANTUM LEAPING AT OUR EVENT IS UNMATCHED
           </h1>
         </div>
@@ -73,14 +73,17 @@ const EventSection = () => {
               isOpposite: false,
             },
           ].map(({ header, content, isOpposite }, index) => (
-            <div className="grid grid-cols-1 lg:grid-cols-[5fr_1fr_5fr] gap-8 items-center">
+            <div
+              key={index}
+              className="grid grid-cols-1 lg:grid-cols-[5fr_1fr_5fr] gap-8 items-center"
+            >
               <div
                 className={`${isOpposite && "lg:order-3"} justify-self-start`}
               >
-                <h3 className="text-2xl md:text-3xl font-bold mb-4 font-montserrat">
+                <h3 className="text-2xl md:text-[28px] font-bold mb-4 font-montserrat">
                   {header}
                 </h3>
-                <p className="text-gray-700 text-lg md:text-2xl font-open-sans">
+                <p className="text-lg md:text-[20px] font-open-sans">
                   {content}
                 </p>
               </div>
@@ -105,7 +108,7 @@ const EventSection = () => {
         </div>
 
         <div className="text-center mt-16 mb-12 px-4 pt-48">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 max-w-[1400px] mx-auto font-montserrat uppercase">
+          <h1 className="!leading-tight text-4xl md:text-5xl font-bold mb-4 max-w-[1800px] mx-auto font-montserrat uppercase">
             But Don’t Take Our Word for It—Here’s What Leading Scientists and
             Authors Say About the Power of Quantum Transformation
           </h1>
@@ -115,20 +118,21 @@ const EventSection = () => {
           <p className="text-4xl md:text-5xl mb-4 font-bold font-montserrat uppercase">
             Feel the power yourself
           </p>
-          <p className="text-xl lg:text-[28px] max-w-xl mx-auto">
-            Take control of your story and step into your full potential
+          <p className="text-xl leading-tight lg:text-[26px] max-w-2xl mx-auto">
+            Experience transformation at the speed of thought and leap into your
+            full potential.
           </p>
         </div>
         <div className="w-full mx-auto text-center">
-          <ButtonComponent className="mt-14 px-3 py-6 sm:px-20 sm:py-14">
-            <p className="hidden md:block font-montserrat text-[10px] min-[328px]:text-sm text-white font-bold lg:text-xl md:text-2xl xl:text-[28px] uppercase">
+          <ButtonComponent className="mt-14 px-3 py-6 sm:px-10 sm:py-14">
+            <p className="hidden md:block font-montserrat text-[10px] min-[328px]:text-sm text-white font-bold lg:text-xl md:text-2xl xl:text-[26px] uppercase">
               I'm Ready to Unlock My Quantum Potential
             </p>
             <p className="md:hidden block font-montserrat text-sm text-white font-bold sm:text-xl uppercase">
               Yes, I’m Ready
             </p>
           </ButtonComponent>
-          <p className="text-sm mt-4 italic">
+          <p className="text-md text-center md:text-lg mt-4 italic">
             With only 23 Diamond spots available, time is running out to reserve
             your spot.
           </p>

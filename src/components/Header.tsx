@@ -11,8 +11,8 @@ export default function Header() {
           <Logo className="w-[8rem] md:w-[200px]" />
         </a>
 
-        <ButtonComponent className="py-0 md:py-7">
-          <p className="font-montserrat text-white font-bold text-xs xs:text-sm md:text-2xl px-0 md:px-5">
+        <ButtonComponent className="py-0 md:py-6">
+          <p className="font-montserrat text-white font-bold text-xs xs:text-sm md:text-xl px-0 md:px-3">
             BUY TICKET
           </p>
         </ButtonComponent>
@@ -26,17 +26,17 @@ export default function Header() {
         <span className="hidden items-center space-x-1 md:flex">
           <i className="fas fa-exclamation-triangle"></i>
           <span className="text-sm flex items-center">
-            <GoAlertFill className="mr-2 text-sm" />
-            <p className="font-open-sans font-bold md:text-md xl:text-lg uppercase">
+            <GoAlertFill className="mr-2 text-xl" />
+            <p className="px-0 font-open-sans font-bold md:text-md xl:text-lg uppercase">
               Your 70% DISCOUNT EXPIRES IN:
             </p>
           </span>
         </span>
-        <CountdownTimer className="pr-4" />
+        <CountdownTimer className="px-4" />
         {/* Ticket Button Inside Countdown */}
-        <ButtonComponent className="py-7">
-          <p className="font-montserrat text-white font-bold lg:text-md xl:text-lg px-5">
-            GET MY TICKET NOW - 70% OFF
+        <ButtonComponent className="py-3">
+          <p className="font-montserrat text-white font-bold lg:text-md xl:text-[16px]">
+            GET YOUR TICKET NOW - 70% OFF
           </p>
         </ButtonComponent>
       </div>
@@ -60,7 +60,7 @@ export default function Header() {
         {/* Ticket Button Inside Countdown */}
         <ButtonComponent>
           <p className="hidden sm:block font-montserrat text-white font-bold text-sm">
-            GET MY TICKET NOW <br /> 70% OFF
+            GET YOUR TICKET NOW <br /> 70% OFF
           </p>
           <p className="block sm:hidden font-montserrat text-white font-bold text-[10px] sm:text-sm">
             GET TICKET

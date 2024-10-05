@@ -8,7 +8,7 @@ const Benefit = () => {
       bg: "url('/benefit-img-1.png')",
       header: (
         <>
-          <b>Struggling</b> Entrepreneurs
+          <b>Struggling</b> <i>Entrepreneurs</i>
         </>
       ),
       content: (
@@ -22,7 +22,7 @@ const Benefit = () => {
       bg: "url('/image 681.png')",
       header: (
         <>
-          <b>ULTRA</b> HIGH ACHIEVERS
+          <b>ULTRA HIGH</b> <i>ACHIEVERS</i>
         </>
       ),
       content: (
@@ -34,10 +34,10 @@ const Benefit = () => {
       ),
     },
     {
-      bg: "url('/benefit-img-2.png')",
+      bg: "url('/benefit-img-3.png')",
       header: (
         <>
-          HOLISTIC <b>GROWTH SEEKERS</b>
+          <b>HOLISTIC</b> <br /> <i>GROWTH SEEKERS</i>
         </>
       ),
       content: (
@@ -48,10 +48,11 @@ const Benefit = () => {
       ),
     },
     {
-      bg: "url('/benefit-img-3.png')",
+      bg: "url('/benefit-img-2.png')",
       header: (
         <>
-          <b>VISIONARY</b> LEADERS
+          <b>VISIONARY</b>
+          <br /> <i>LEADERS</i>
         </>
       ),
       content: (
@@ -67,13 +68,13 @@ const Benefit = () => {
   return (
     <Section
       id="benefit"
-      className="!pt-1 !pb-1 bg-gradient-to-t from-color-13 from-[-10%] to-black"
+      className="!pt-1 !pb-1 bg-gradient-to-t from-color-13 from-[0%] to-black"
     >
       <div className="container relative max-w-[112rem]">
         <div className="text-white min-h-screen flex flex-col items-center">
           {/* Main Title Section */}
-          <div className="text-center mt-12 px-4 mx-100 max-w-[68rem]">
-            <h1 className="text-4xl lg:text-6xl font-bold mb-12 font-montserrat">
+          <div className="text-center mt-12 px-4 mx-100 max-w-[60rem]">
+            <h1 className="!leading-tight text-4xl lg:text-5xl font-bold mb-12 font-montserrat">
               WHO WILL BENEFIT MOST FROM THIS QUANTUM LEAP?
             </h1>
             <p className="max-w-3xl mx-auto mb-6 font-open-sans text-xl md:text-2xl">
@@ -84,32 +85,31 @@ const Benefit = () => {
 
           {/* Card Grid Section */}
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 mt-12 px-6 min-h-[40rem]">
-            {cardContents.map(({ header, content, bg }) => (
-              <>
-                <BenefitCard
-                  content={content}
-                  header={header}
-                  className={`max-w-3xl`}
-                  image={bg}
-                />
-              </>
+            {cardContents.map(({ header, content, bg }, index) => (
+              <BenefitCard
+                key={index}
+                content={content}
+                header={header}
+                className={`max-w-3xl`}
+                image={bg}
+              />
             ))}
           </div>
 
           {/* Footer Section */}
           <div className="mt-12 mb-6 px-4 text-center max-w-7xl py-6">
-            <p className="tracking-wide leading-snug text-xl md:text-[28px] text-white font-open-sans">
+            <p className="tracking-wide leading-snug text-xl md:text-[26px] text-white font-open-sans">
               Ready to harness the power of Quantum principles and tap into the
               99.99% of your untapped potential? This is your moment. Don’t let
               another day pass feeling less than extraordinary…
             </p>
           </div>
           <ButtonComponent className="px-3 py-3 md:px-6 md:py-8 lg:px-[100px] lg:py-12">
-            <p className="font-montserrat text-[10px] min-[328px]:text-sm text-white font-bold lg:text-xl xl:text-[28px] uppercase">
+            <p className="font-montserrat text-[10px] min-[328px]:text-sm text-white font-bold lg:text-xl xl:text-[26px] uppercase">
               Transform Your Life Today!
             </p>
           </ButtonComponent>
-          <p className="pt-4 text-md text-center md:text-xl text-white font-open-sans italic">
+          <p className="pt-4 text-md text-center md:text-lg text-white font-open-sans italic">
             With only 23 Diamond spots available, time is running out to secure
             your spot.
           </p>

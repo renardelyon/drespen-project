@@ -47,8 +47,7 @@ const IntroSection = () => {
                       thought patterns. This shift fosters adaptability and
                       creative thinking, enhancing both your leadership skills
                       and your ability to innovate in business and life (
-                      <i>MDPI</i>
-                      )(Well Being Journal).
+                      <i>MDPI )(Well Being Journal).</i>
                     </>
                   ),
                 },
@@ -89,12 +88,12 @@ const IntroSection = () => {
                   ),
                 },
               ].map(({ title, content }, index) => (
-                <>
-                  <h3 className="leading-tight text-3xl md:text-[42px] font-bold font-montserrat pb-6 pt-10 uppercase">
+                <div key={index}>
+                  <h3 className="leading-tight text-3xl md:text-4xl font-bold font-montserrat pb-6 pt-10 uppercase">
                     <span className="text-[#FFE054]">{`0${index + 1} `}</span>
                     {title}
                   </h3>
-                  <p className="text-lg md:text-2xl text-white font-open-sans pb-6 max-w-4xl">
+                  <p className="text-lg md:text-[22px] text-white font-open-sans pb-6 max-w-3xl">
                     {content}
                   </p>
                   <img
@@ -102,7 +101,7 @@ const IntroSection = () => {
                     alt="Rewire Neural Pathways"
                     className="rounded-lg shadow-lg w-full pb-10"
                   />
-                </>
+                </div>
               ))}
             </div>
           </div>
